@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        
+        <a href="/"><img class="logo" src="/image/BigBangTheory.logo.png" alt="logo serie big bang theory"></a>
+        
+        <form class="recherche" action="#">
+            <input type="text" placeholder="Recherche" >
+            <button>ok</button>
+        </form>
+        <nav class="nav">
+            <% for(let name of personnages){ %>
+              <a class="nav-button" href="/personnages/<%= name.name.toLowerCase() %>"><%= name.name %></a>
+            <% } %>
+        </nav>
+          
+    </header>
